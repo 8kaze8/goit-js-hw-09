@@ -1,0 +1,39 @@
+/* Başlık ortalama ve boşluk ekleme */
+h1 {
+  text-align: center;
+  margin-bottom: 20px; /* Başlık ile görseller arasında boşluk */
+}
+
+/* Galeri düzeni */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 sütunluk ızgara */
+  gap: 15px; /* Görseller arası boşluk */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px; /* Galeri genişliği sınırlama */
+}
+
+/* Galeri link ve çerçeve ayarları */
+.gallery-link {
+  display: block;
+  border: 2px solid #ddd; /* Çerçeve rengi ve kalınlığı */
+  border-radius: 8px;
+  overflow: hidden; /* Resmin çerçeve sınırında kalması */
+}
+
+/* Resim büyütme efekti */
+.image-wrapper {
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05); /* Yalnızca resim büyür */
+}
